@@ -1,0 +1,23 @@
+{
+  "name": "casa-pc-gamer",
+  "productName": "Casa PC Gamer",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "dist": "electron-builder --win --x64"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.maxmilimi9.casapcgamer",
+    "win": {
+      "target": "nsis"
+    },
+    "files": [
+      "**/*",
+      "!**/.*"
+    ]
+  }
+}
